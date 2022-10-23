@@ -9,8 +9,7 @@ echo "<head><meta charset='UTF-8' /></head>";
 
 
 try {
-	$db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
-	
+	$db = new PDO("mysql:host=localhost;dbname=$database;charset=UTF8", $user, $password);
 	
 	echo "<h2>Darāmi darbi</h2><ol>";
 	foreach($db->query("SELECT content FROM $table") as $row) {
