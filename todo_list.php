@@ -17,6 +17,7 @@ try {
 		echo "<li>" . $row["content"] . "</li>";
 	}
 	echo "</ol>";
+	echo "<p>Un vēl citi darbi</p>"
 } catch (PDOException $e) {
 	print "Error!: " . $e->getMessage() . "<br/>";
 	die();
