@@ -11,7 +11,7 @@ echo "<head><meta charset='UTF-8' /></head>";
 try {
 	$db = new PDO("mysql:host=localhost;dbname=$database;charset=UTF8", $user, $password);
 	
-	echo "<h2>Darāmie darbi ❤️</h2><ol>";
+	echo "<h2>Darāmie darbi līdz rītdienai ❤️</h2><ol>";
 	foreach($db->query("SELECT content FROM $table") as $row) {
 		echo "<li>" . $row["content"] . "</li>";
 	}
